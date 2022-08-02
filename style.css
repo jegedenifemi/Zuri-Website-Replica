@@ -63,7 +63,10 @@ a {
   justify-content: center;
   margin-bottom: 15rem;
 }
-.hero_btns > .btns {
+.hero_btn1 {
+  padding: 0.8rem 1.8rem;
+}
+.hero_btn2 {
   padding: 0.8rem 2rem;
 }
 .hero_btn1,
@@ -119,7 +122,8 @@ a {
   z-index: -5;
 }
 .program_cards_cont {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin-inline: 2.5rem;
 }
@@ -162,4 +166,47 @@ hr {
 footer > p {
   text-align: center;
   font-weight: 600;
+}
+
+/* MEDIA QUERIES FOR HOME PAGE */
+@media (max-width: 1050px) {
+  .bg_left,
+  .bg_right {
+    display: none;
+  }
+  .program_cards_cont {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 769px) {
+  /* Hero Section */
+  .hero {
+    padding-inline: 1rem;
+  }
+  .hero_btns {
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .hero_btns {
+    align-items: center;
+  }
+
+  /* Programs Section */
+  .program_cards_cont {
+    margin-inline: 1.5rem;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+  .foot_main {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  footer h3 {
+    font-size: x-large;
+  }
 }
