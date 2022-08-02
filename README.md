@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View Here!]()
+- Live Site URL: [View Here!](https://jegedenifemi.github.io/Zuri-Website-Replica/)
 
 ## Process
 
