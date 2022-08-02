@@ -1,9 +1,165 @@
+@font-face {
+  font-family: Averta;
+  src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Averta, sans-serif;
+  /* border: 1px solid red; */
 }
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Noto Emoji";
+  color: rgb(82, 72, 71);
+}
+p,
+a,
+button,
+li {
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: rgb(232, 51, 44);
+  text-decoration: none;
+}
+::selection {
+  background-color: rgb(99, 99, 233);
+  color: white;
+}
+/* Hero Section */
+.hero {
+  height: 114vh;
+  background-image: url(./img/home/hero-bg.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero_logo {
+  width: fit-content;
+  margin: 0 auto;
+  padding-block: 4rem 5rem;
+}
+.hero_txt {
+  text-align: center;
+}
+.hero_txt > h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.hero_txt > p {
+  max-width: 680px;
+  margin: 2.5rem auto 6rem;
+}
+
+.hero_btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+.hero_btns > .btns {
+  padding: 0.8rem 2rem;
+}
+.hero_btn1,
+.hero_btn2:hover {
+  background-color: rgb(232, 51, 44);
+  color: white;
+  border: none;
+}
+.hero_btn1:hover,
+.hero_btn2 {
+  background-color: white;
+  color: rgb(232, 51, 44);
+  border: 1px solid rgb(232, 51, 44);
+}
+
+/* Programs Section */
+.programs {
+  margin-block: 10rem;
+  position: relative;
+}
+.programs > h4 {
+  color: rgb(232, 51, 44);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.programs > p {
+  text-align: center;
+  font-size: x-large;
+  opacity: 1;
+  line-height: 2.7rem;
+  margin-block: 0.5rem 5rem;
+}
+.bg_left {
+  background-image: url(./img/home/left_bvmv7q.png);
+  position: absolute;
+  left: 0;
+  top: 6.5rem;
+}
+.bg_right {
+  background-image: url(./img/home/right_yz6hn3.png);
+  position: absolute;
+  right: 0;
+  top: 6.5rem;
+}
+.bg_left,
+.bg_right {
+  height: 30rem;
+  width: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -5;
+}
+.program_cards_cont {
+  display: flex;
+  gap: 2rem;
+  margin-inline: 2.5rem;
+}
+.program_cards {
+  display: grid;
+  gap: 3rem;
+  background-color: rgb(254, 250, 249);
+  padding: 4rem 2.5rem;
+}
+
+/* Footer */
+footer {
+  margin: 15rem 2.5rem 7rem;
+  text-align: left;
+}
+.foot_main {
+  display: flex;
+  justify-content: space-between;
+}
+footer h3 {
+  font-weight: 600;
+  opacity: 1;
+}
+footer li {
+  margin-bottom: 0.6rem;
+  font-size: 14px;
+}
+.sm_links {
+  display: flex;
+  gap: 0.6rem;
+}
+.sm_links > li > a > img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+hr {
+  border: 1px solid rgb(219, 219, 219);
+  margin-block: 5rem 2rem;
+}
+footer > p {
+  text-align: center;
+  font-weight: 600;
 }
