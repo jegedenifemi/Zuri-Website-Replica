@@ -2,15 +2,18 @@
   font-family: Averta;
   src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
 }
+@import url("http://fonts.cdnfonts.com/css/graphik");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Averta, sans-serif;
   /* border: 1px solid red; */
 }
 body {
   color: rgb(82, 72, 71);
+}
+.index_body {
+  font-family: Averta, sans-serif;
 }
 p,
 a,
@@ -29,7 +32,7 @@ a {
   text-decoration: none;
 }
 ::selection {
-  background-color: rgb(99, 99, 233);
+  background-color: rgb(100, 155, 206);
   color: white;
 }
 /* Hero Section */
@@ -62,6 +65,10 @@ a {
   gap: 1.5rem;
   justify-content: center;
   margin-bottom: 15rem;
+}
+.hero_btns > a:active > button {
+  border: 2px solid black;
+  border-radius: 0.2rem;
 }
 .hero_btn1 {
   padding: 0.8rem 1.8rem;
@@ -210,3 +217,127 @@ footer > p {
     font-size: x-large;
   }
 }
+
+/* STYLING FOR industrynew.html PAGE*/
+.IN_body {
+  font-family: "Graphik", sans-serif !important;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  padding: 0.6rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.IN_body > nav > ul > li > a {
+  color: rgb(82, 72, 71);
+  font-size: 20px;
+  font-weight: 100;
+}
+.IN_body > nav > ul > li > a:last-child {
+  display: flex;
+  align-items: center;
+}
+nav > ul > li > a > img {
+  width: 4.5rem;
+  background-color: rgb(240, 137, 128);
+  border: 10px solid rgb(232, 51, 44);
+  border-radius: 50%;
+}
+.enroll {
+  padding: 0.7rem 2.5rem;
+  color: white;
+  background-color: rgb(232, 51, 44);
+  border-radius: 2rem;
+  margin-left: -2rem;
+  z-index: -1;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.IN_hero {
+  margin: 18rem 4rem 3rem;
+  display: flex;
+}
+.IN_hero > img:nth-of-type(1) {
+  margin-right: -2.9rem;
+  height: 20rem;
+}
+.IN_hero > img:nth-of-type(2) {
+  margin: -2rem 0 0 -2rem;
+  height: 24rem;
+}
+.IN_hero_txt {
+  position: relative;
+  text-align: center;
+  margin-top: -6rem;
+}
+.IN_hero_txt h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.IN_hero_txt p {
+  font-size: 18px;
+}
+.IN_hero_txt > p:first-of-type {
+  color: rgb(232, 51, 44);
+}
+.IN_hero_txt > img:nth-of-type(1) {
+  position: absolute;
+  width: 11rem;
+}
+.IN_hero_txt > p:nth-of-type(2) {
+  width: 61%;
+  margin: 3rem auto;
+}
+.tinyman {
+  height: 4rem;
+  position: absolute;
+  left: 2.5rem;
+}
+.hero_twist {
+  height: 6.5rem;
+  position: absolute;
+  bottom: -3.5rem;
+  margin-left: -3rem;
+}
+
+/* About Us Section */
+#IN_about {
+  border-top: 1px solid rgba(82, 72, 71, 0.473);
+  border-bottom: 1px solid rgba(82, 72, 71, 0.473);
+  margin: 6rem 4rem 4rem;
+  /* padding-block: 3rem; */
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1fr;
+  align-items: center;
+  justify-content: center;
+  /* gap: 3rem; */
+}
+#IN_about > img {
+  height: 11.5rem;
+  margin: 0 auto;
+}
+#IN_about > p {
+  font-size: 25px;
+  line-height: 2rem;
+  text-align: right;
+}
+#IN_about > p > a {
+  color: rgb(6, 230, 129);
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/* Why Zuri? Section*/
