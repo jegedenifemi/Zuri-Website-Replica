@@ -266,7 +266,7 @@ nav > ul > li > a > img {
 
 /* Hero Section */
 .IN_hero {
-  margin: 18rem 4rem 3rem;
+  margin: 13rem 4rem 3rem;
   display: flex;
 }
 .IN_hero > img:nth-of-type(1) {
@@ -328,6 +328,7 @@ nav > ul > li > a > img {
   border-bottom: 1px solid rgba(82, 72, 71, 0.473);
   margin: 6rem 4rem 4rem;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 0.9fr 1fr;
 }
 #IN_about > img {
@@ -783,11 +784,22 @@ footer > hr {
 
 /* MEDIA QUERIES FOR industrynew.html PAGE*/
 @media screen and (min-width: 1650px) {
-  html,
-  body,
-  nav {
-    max-width: 1650px;
-    margin: 0 auto;
+  .IN_hero,
+  .whyzuri_head,
+  #IN_whyzuri > h2,
+  .structure,
+  .structure_head,
+  footer,
+  .quality_training,
+  .IN_body > nav,
+  .whyzuri_card_cont,
+  #IN_scope {
+    padding-inline: 14vw;
+  }
+  #IN_about,
+  #IN_faq,
+  .get_started {
+    margin-inline: 14vw;
   }
 }
 
@@ -1086,7 +1098,7 @@ footer > hr {
     font-size: 24px;
   }
   .scope_cards {
-    padding: 2rem 0.5rem;
+    padding: 2rem 1.5rem;
   }
 
   /* FAQs Section */
