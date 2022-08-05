@@ -7,10 +7,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid red; */
 }
 body {
-  color: rgb(82, 72, 71);
+  color: rgb(27, 26, 32);
 }
 .index_body {
   font-family: Averta, sans-serif;
@@ -19,16 +18,16 @@ p,
 a,
 button,
 li {
-  opacity: 0.9;
-  font-weight: 500;
+  /* font-weight: 300; */
   font-size: 16px;
   line-height: 1.5rem;
+  letter-spacing: 0.00938em;
 }
 ul {
   list-style-type: none;
 }
 a {
-  color: rgb(232, 51, 44);
+  color: rgb(231, 51, 43);
   text-decoration: none;
 }
 ::selection {
@@ -78,15 +77,15 @@ a {
 }
 .hero_btn1,
 .hero_btn2:hover {
-  background-color: rgb(232, 51, 44);
+  background-color: rgb(231, 51, 43);
   color: white;
   border: none;
 }
 .hero_btn1:hover,
 .hero_btn2 {
   background-color: white;
-  color: rgb(232, 51, 44);
-  border: 1px solid rgb(232, 51, 44);
+  color: rgb(231, 51, 43);
+  border: 1px solid rgb(231, 51, 43);
 }
 
 /* Programs Section */
@@ -95,7 +94,7 @@ a {
   position: relative;
 }
 .programs > h4 {
-  color: rgb(232, 51, 44);
+  color: rgb(231, 51, 43);
   font-weight: 500;
   font-size: 14px;
   text-align: center;
@@ -223,7 +222,7 @@ footer > p {
   font-family: "Graphik", sans-serif !important;
 }
 nav {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -239,8 +238,8 @@ nav > ul {
   gap: 3rem;
 }
 .IN_body > nav > ul > li > a {
-  color: rgb(82, 72, 71);
-  font-size: 20px;
+  color: rgb(27, 26, 32);
+  font-size: 19px;
   font-weight: 100;
 }
 .IN_body > nav > ul > li > a:last-child {
@@ -250,13 +249,13 @@ nav > ul {
 nav > ul > li > a > img {
   width: 4.5rem;
   background-color: rgb(240, 137, 128);
-  border: 10px solid rgb(232, 51, 44);
+  border: 10px solid rgb(231, 51, 43);
   border-radius: 50%;
 }
 .enroll {
   padding: 0.7rem 2.5rem;
   color: white;
-  background-color: rgb(232, 51, 44);
+  background-color: rgb(231, 51, 43);
   border-radius: 2rem;
   margin-left: -2rem;
   z-index: -1;
@@ -272,11 +271,11 @@ nav > ul > li > a > img {
 }
 .IN_hero > img:nth-of-type(1) {
   margin-right: -2.9rem;
-  height: 20rem;
+  width: 30%;
 }
 .IN_hero > img:nth-of-type(2) {
   margin: -2rem 0 0 -2rem;
-  height: 24rem;
+  width: 25%;
 }
 .IN_hero_txt {
   position: relative;
@@ -285,32 +284,42 @@ nav > ul > li > a > img {
 }
 .IN_hero_txt h1 {
   font-size: 3rem;
+  margin: auto;
   font-weight: 700;
 }
 .IN_hero_txt p {
   font-size: 18px;
 }
-.IN_hero_txt > p:first-of-type {
-  color: rgb(232, 51, 44);
+.IN_hero_txt > p:first-of-type,
+#IN_whyzuri > h2,
+#IN_scope > h2,
+.faq_head > h2,
+.structure_head > h2 {
+  color: rgb(231, 51, 43);
 }
 .IN_hero_txt > img:nth-of-type(1) {
   position: absolute;
   width: 11rem;
 }
 .IN_hero_txt > p:nth-of-type(2) {
-  width: 61%;
-  margin: 3rem auto;
+  width: 65%;
+  margin: 3rem auto 2rem;
 }
 .tinyman {
   height: 4rem;
   position: absolute;
   left: 2.5rem;
 }
-.hero_twist {
+.IN_hero_txt > div:nth-last-of-type(1) {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.hero_wire {
   height: 6.5rem;
   position: absolute;
-  bottom: -3.5rem;
-  margin-left: -3rem;
+  top: 3rem;
+  right: -35%;
 }
 
 /* About Us Section */
@@ -318,12 +327,8 @@ nav > ul > li > a > img {
   border-top: 1px solid rgba(82, 72, 71, 0.473);
   border-bottom: 1px solid rgba(82, 72, 71, 0.473);
   margin: 6rem 4rem 4rem;
-  /* padding-block: 3rem; */
   display: grid;
   grid-template-columns: 1fr 0.9fr 1fr;
-  align-items: center;
-  justify-content: center;
-  /* gap: 3rem; */
 }
 #IN_about > img {
   height: 11.5rem;
@@ -336,8 +341,818 @@ nav > ul > li > a > img {
 }
 #IN_about > p > a {
   color: rgb(6, 230, 129);
+  min-width: max-content;
   font-size: 25px;
   text-decoration: underline;
 }
 
 /* Why Zuri? Section*/
+#IN_whyzuri > h2 {
+  font-weight: 200;
+  margin-left: 4rem;
+}
+.whyzuri_wire {
+  height: 4.5rem;
+  margin-left: 25%;
+}
+.whyzuri_head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+  margin-inline: 4rem;
+}
+.whyzuri_head > p,
+#IN_scope > p,
+.faq_head > p,
+.structure_head > p:nth-of-type(1) {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.whyzuri_head > img {
+  height: 12rem;
+  margin-left: 27%;
+}
+.whyzuri_card_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem 1.5rem;
+  padding: 0 4rem 7rem;
+  background: linear-gradient(#fcf9f805, #fff4f0 17%, #fff4f0 84%, #fcf9f805);
+}
+.whyzuri_cards:nth-of-type(1) {
+  background-color: rgb(231, 51, 43);
+  color: white;
+}
+.whyzuri_cards {
+  padding: 5rem 3rem;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+  transition: 0.5s ease;
+  background-color: white;
+}
+.whyzuri_cards:hover {
+  transform: translateY(-1rem);
+}
+.whyzuri_cards > img {
+  height: 7rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card_no {
+  font-size: 60px;
+  font-weight: 800;
+}
+.whyzuri_cards > h3 {
+  font-size: 36px;
+  margin-block: 3.5rem;
+}
+.whyzuri_cards > p:nth-last-of-type(1) {
+  font-size: 18px;
+}
+
+/* Quality Training Section */
+.quality_training {
+  position: relative;
+  padding: 8rem 6.5rem 10rem;
+  margin-bottom: 5rem;
+  background-color: rgb(231, 51, 43);
+  color: white;
+  display: flex;
+  gap: 2.5rem;
+}
+.quality_training > img:first-child {
+  position: absolute;
+  width: 5rem;
+  top: 4.5rem;
+  left: 26%;
+}
+.quality_training_left,
+.quality_training_right {
+  flex: 50%;
+}
+.quality_training_left > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.quality_training_left > p:nth-of-type(2) {
+  font-size: 40px;
+  line-height: 3rem;
+  width: 90%;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.quality_training_left > p:nth-of-type(3) {
+  width: 65%;
+}
+.white_enroll {
+  color: rgb(231, 52, 43);
+  background-color: white;
+  border-radius: 2rem;
+  font-weight: 100;
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+}
+.quality_training_left > .white_enroll {
+  display: inline-block;
+  margin-block: 2rem 3rem;
+}
+.qual_btn_cont {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.qual_btns {
+  border: 2px solid white;
+  border-radius: 2.5rem;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 0.5rem;
+  cursor: not-allowed;
+}
+.qual_btns > img {
+  width: 3rem;
+}
+
+.quality_training > img:nth-of-type(2) {
+  position: absolute;
+  width: 5rem;
+  bottom: 2rem;
+  left: 2rem;
+}
+.quality_training_right {
+  position: relative;
+}
+.quality_training_right > img {
+  position: absolute;
+  top: -4rem;
+  right: -2rem;
+  width: 39rem;
+}
+
+/* Scope Of the Program */
+#IN_scope {
+  padding-inline: 4rem;
+}
+#IN_scope > h2 {
+  font-weight: 200;
+  margin-left: 0;
+}
+#IN_scope > p {
+  margin-right: 60%;
+}
+.scope_wire {
+  width: 7.5rem;
+  margin-left: 45%;
+}
+.scope_card_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.scope_cards {
+  padding: 2rem 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 11px 22px rgba(231, 52, 43, 0.137);
+}
+.scope_cards > h4 {
+  font-size: larger;
+}
+.scope_card_imgs {
+  margin-block: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.scope_card_imgs > img {
+  padding-right: 0.7rem;
+}
+#IN_scope > div:nth-last-of-type(1) {
+  display: flex;
+}
+#IN_scope > div:nth-last-of-type(1) > .enroll {
+  margin: 5rem auto;
+  background-color: rgb(231, 51, 43);
+}
+
+/* FAQs Section */
+#IN_faq {
+  border-top: 1px solid rgba(82, 72, 71, 0.2);
+  border-bottom: 1px solid rgba(82, 72, 71, 0.2);
+  margin-inline: 4rem;
+  padding-block: 9rem 3rem;
+}
+.faq_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.faq_head > img {
+  width: 8rem;
+  position: absolute;
+  left: 11%;
+  top: -4rem;
+}
+.faq_head > h2,
+.structure_head > h2 {
+  font-weight: 200;
+}
+.faq_head > p,
+.structure_head > p:nth-of-type(1) {
+  font-size: 40px;
+}
+.accordion {
+  width: 85%;
+  margin: 5rem auto;
+}
+.accordion_item {
+  border: 1px solid rgba(71, 44, 111, 0.43);
+  padding: 1rem;
+  position: relative;
+}
+.accordion_item h4 {
+  padding: 1rem 1.5rem 0.7rem 0;
+  font-size: large;
+}
+.accordion_item input {
+  display: none;
+}
+.accordion_item input ~ p {
+  display: none;
+}
+.accordion_item input:checked ~ p {
+  display: block;
+}
+.accordion_item img {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  transition: 0.5s ease;
+}
+.accordion_item input:checked ~ img {
+  transform: rotateZ(180deg);
+}
+#IN_faq > div:nth-last-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3rem;
+}
+#IN_faq > div:nth-last-of-type(1) > p,
+.structure_head > p:nth-of-type(2) {
+  font-size: larger;
+}
+#IN_faq > div:nth-last-of-type(1) > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+  padding-inline: 2rem;
+}
+
+/* Structure Section */
+.structure {
+  margin: 0 6.5rem 15rem;
+}
+.structure_head {
+  position: relative;
+  margin: 10rem 4rem 4rem;
+  text-align: center;
+}
+.structure_head > img {
+  position: absolute;
+  width: 7.5rem;
+}
+.structure_head > p:nth-of-type(2) {
+  margin-block: 1.5rem 2.5rem;
+}
+.structure_head > img:nth-of-type(1) {
+  left: 12%;
+  top: -6rem;
+}
+.structure_head > img:nth-of-type(2) {
+  right: 3rem;
+  top: -4rem;
+}
+.triangle {
+  width: 11rem;
+  bottom: -300%;
+  position: absolute;
+  left: -10rem;
+}
+.structure_card_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  position: relative;
+}
+.structure_card_cont:first-child {
+  position: absolute;
+}
+.structure_cards {
+  background: rgb(27, 26, 32);
+  color: white;
+  padding: 3rem 6.5rem 2rem 3rem;
+  border-radius: 4rem;
+  box-shadow: 0 11px 42px rgba(231, 52, 43, 0.3);
+  position: relative;
+}
+.structure_cards > p:first-of-type {
+  font-size: 36px;
+  font-weight: 700;
+}
+.structure_cards > p {
+  margin-block: 1.5rem;
+}
+.structure_cards > h4 {
+  font-size: large;
+}
+.structure_cards > ul {
+  list-style-type: disc;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 300;
+}
+.structure_cards:nth-of-type(2) li {
+  margin-bottom: 1rem;
+}
+.structure_cards:nth-of-type(2) li:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.structure_cards li > img {
+  width: 1rem;
+}
+.structure_cards:first-of-type > img {
+  position: absolute;
+  right: 2rem;
+  bottom: 3.5rem;
+  width: 6rem;
+}
+.structure_cards:nth-of-type(2) > img {
+  position: absolute;
+  width: 11rem;
+  right: 2rem;
+  bottom: 5rem;
+}
+.str_left_dots,
+.str_right_dots {
+  position: absolute;
+}
+.str_left_dots {
+  width: 7rem;
+  bottom: -13rem;
+  left: -2.5rem;
+}
+.str_right_dots {
+  width: 10rem;
+  bottom: -4rem;
+  right: -3.5%;
+  z-index: -2;
+}
+
+/* Get Started Section  */
+.get_started {
+  position: relative;
+  color: white;
+  background-color: rgb(231, 51, 43);
+  margin-inline: 4rem;
+  padding: 4rem 5rem 8rem;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+.get_started > img {
+  position: absolute;
+}
+.get_started > img:first-child {
+  width: 9rem;
+  left: 12%;
+}
+.get_started > img:nth-of-type(2) {
+  width: 9rem;
+  top: 0;
+  right: 0;
+}
+.get_started > img:nth-of-type(3) {
+  width: 7rem;
+  bottom: 0;
+  left: 0;
+}
+.get_started > img:nth-of-type(4) {
+  width: 9.5rem;
+  bottom: 0;
+  right: 0;
+}
+.get_started > p:nth-of-type(1) {
+  font-size: 18px;
+}
+.get_started > p:nth-of-type(2) {
+  font-size: 55px;
+  line-height: 4.5rem;
+  font-weight: 700;
+  width: 80%;
+  margin: 1.5rem auto 3rem;
+}
+
+/* Footer */
+footer {
+  margin: 2rem 4rem 0;
+  display: flex;
+  flex-direction: column;
+  color: rgb(27, 26, 32);
+  padding-block: 3rem 2.5rem;
+  gap: 3rem;
+}
+footer > hr {
+  display: none;
+}
+.footer_top,
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_priv > a {
+  color: rgb(27, 26, 32);
+  padding-left: 1rem;
+}
+
+/* MEDIA QUERIES FOR industrynew.html PAGE*/
+@media screen and (min-width: 1650px) {
+  html,
+  body,
+  nav {
+    max-width: 1650px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .IN_hero {
+    margin-block: 0 13rem;
+    flex-direction: column;
+  }
+  .IN_hero > img:nth-of-type(1) {
+    width: 75%;
+    margin: 0 auto 2rem;
+  }
+  .IN_hero > img:nth-of-type(2) {
+    display: none;
+  }
+  .IN_hero_txt > img:nth-of-type(1) {
+    right: 0;
+    width: 20rem;
+  }
+  .hero_wire {
+    height: 9.5rem;
+    right: -100%;
+  }
+  #IN_about > img {
+    height: 15.5rem;
+    margin: 0 auto;
+  }
+  #IN_about > h2,
+  #IN_whyzuri > h2,
+  .faq_head > h2,
+  .structure_head > h2 {
+    font-size: 20px;
+  }
+  #IN_about > p,
+  #IN_about > p > a,
+  .structure_cards > h4,
+  .structure_head > p:nth-of-type(2),
+  .get_started > p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  .whyzuri_head > p,
+  #IN_scope > p,
+  .faq_head > p,
+  .structure_head > p:nth-of-type(1),
+  .quality_training_left > p:nth-of-type(2) {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .whyzuri_card_cont {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .whyzuri_cards > img {
+    height: 11rem;
+  }
+  .card_no {
+    font-weight: 600;
+  }
+
+  /* Quality Training Section */
+  .quality_training {
+    flex-direction: column;
+    padding-top: 13rem;
+  }
+  .quality_training > img:first-child {
+    width: 12rem;
+    left: 70%;
+  }
+  .quality_training_left > p:nth-of-type(3),
+  .qual_btn_cont {
+    width: 100%;
+  }
+  .qual_btn_cont {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .quality_training_right > img {
+    position: unset;
+    width: 100%;
+  }
+
+  /* Scope Of the Program */
+  #IN_scope > p {
+    margin-right: 0;
+  }
+  .scope_card_cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .scope_cards > p,
+  .structure_cards > ul {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1125px) and (min-width: 1050px) {
+  .IN_body > nav > img {
+    width: 13.5rem;
+  }
+}
+@media screen and (max-width: 1049px) {
+  .IN_body > nav > ul > li {
+    display: none;
+  }
+  .IN_body > nav > ul > li:last-child {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 901px) {
+  /* About us Section */
+  #IN_about {
+    grid-template-columns: 1fr;
+    padding-block: 2rem;
+    text-align: center;
+  }
+  #IN_about > p {
+    text-align: center;
+  }
+
+  /* Why Zuri Section */
+  .whyzuri_head,
+  .whyzuri_card_cont {
+    grid-template-columns: 1fr;
+  }
+  .whyzuri_head > img {
+    margin-left: 0;
+  }
+
+  /* Quality Training Section */
+  .qual_btn_cont {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 25%;
+  }
+
+  /* Scope Of the Program & Sructure*/
+  .scope_card_cont,
+  .structure_card_cont {
+    grid-template-columns: 1fr;
+  }
+  .structure {
+    margin-inline: 4rem;
+  }
+  .structure_head > img:nth-of-type(1) {
+    left: 7%;
+  }
+  .structure_head > img:nth-of-type(2) {
+    right: 0;
+  }
+  .triangle {
+    display: none;
+  }
+
+  /* Get Started Section  */
+  .get_started > p:nth-of-type(2) {
+    width: 90%;
+    font-size: 36px;
+    line-height: 3rem;
+  }
+}
+@media screen and (max-width: 725px) {
+  .IN_hero_txt > img:nth-of-type(1) {
+    right: 25%;
+    width: 10rem;
+  }
+  .IN_hero_txt h1 {
+    font-size: 36px;
+  }
+  .IN_body > nav,
+  .whyzuri_card_cont,
+  #IN_scope {
+    padding-inline: 2rem;
+  }
+  .IN_body > nav > img,
+  .footer_left > img {
+    width: 11.5rem;
+  }
+  .IN_hero,
+  #IN_about,
+  .whyzuri_head,
+  #IN_whyzuri > h2,
+  #IN_faq,
+  .structure,
+  .structure_head,
+  .get_started,
+  footer {
+    margin-inline: 2rem;
+  }
+  .structure_head > img {
+    width: 5.5rem;
+  }
+  .structure_head > img:nth-of-type(1) {
+    width: 6.5rem;
+    left: 10%;
+    top: -6rem;
+  }
+
+  .structure_head > img:nth-of-type(2) {
+    right: 0;
+  }
+  .quality_training {
+    padding: 8rem 2rem 10rem;
+  }
+  .quality_training > img:first-child {
+    width: 5.5rem;
+    top: 4.5rem;
+    right: 30%;
+  }
+
+  .qual_btn_cont {
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .IN_hero_txt > p:first-of-type {
+    margin-top: 3.5rem;
+  }
+  .accordion {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 559px) {
+  /* NAV */
+  .IN_body > nav > img {
+    width: 8rem;
+  }
+  .IN_body > nav,
+  .whyzuri_card_cont,
+  #IN_scope {
+    padding-inline: 1rem;
+  }
+  .IN_hero,
+  #IN_about,
+  .whyzuri_head,
+  #IN_whyzuri > h2,
+  #IN_faq,
+  .structure,
+  .structure_head,
+  .get_started,
+  footer {
+    margin-inline: 1rem;
+  }
+  nav > ul > li > a > img {
+    width: 4rem;
+  }
+  nav .enroll {
+    padding: 0.6rem 0.5rem 0.6rem 1.9rem;
+  }
+
+  /* Hero */
+  .IN_hero {
+    margin-bottom: 3rem;
+  }
+  .tinyman,
+  .whyzuri_head > img {
+    display: none;
+  }
+  .IN_hero_txt > p:nth-of-type(2) {
+    width: 100%;
+  }
+  .hero_wire {
+    height: 4.5rem;
+    top: 3rem;
+    right: -35%;
+  }
+
+  /* Why Zuri? Section*/
+  .whyzuri_wire {
+    height: 2.5rem;
+    margin-left: 50%;
+  }
+  .whyzuri_cards {
+    padding: 3.5rem 1.5rem;
+  }
+  .whyzuri_cards > img {
+    height: 5.5rem;
+  }
+
+  /* Quality Training Section */
+  .quality_training > img:first-child {
+    width: 4rem;
+    left: 52%;
+  }
+  .quality_training_left > p:nth-of-type(2) {
+    width: 100%;
+  }
+  .qual_btns {
+    font-size: 13px;
+  }
+  .qual_btns > img {
+    width: 2rem;
+  }
+
+  /* Scope Of the Program */
+  #IN_scope > h2 {
+    font-size: 18px;
+  }
+  #IN_scope > p,
+  .structure_head > p:nth-of-type(1) {
+    font-size: 24px;
+  }
+  .scope_cards {
+    padding: 2rem 0.5rem;
+  }
+
+  /* FAQs Section */
+  #IN_faq {
+    padding-block: 6rem 3rem;
+  }
+  .faq_head {
+    text-align: center;
+  }
+  .faq_head > img {
+    width: 5rem;
+    left: 8%;
+  }
+  #IN_faq > div:nth-last-of-type(1) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #IN_faq > div:nth-last-of-type(1) .enroll {
+    margin: 0;
+  }
+
+  /* Structure Section */
+  .structure_head {
+    margin: 5rem 2rem 4rem;
+  }
+  .structure_head > img:nth-of-type(1) {
+    width: 4.5rem;
+    left: 7%;
+    top: -2rem;
+  }
+  .structure_head > img:nth-of-type(2) {
+    width: 2.5rem;
+    right: 0;
+    top: -2rem;
+  }
+  .structure_head > p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .structure_cards {
+    padding-inline: 3rem;
+  }
+
+  /* Get Started Section  */
+  .get_started {
+    padding-inline: 3rem;
+  }
+  .get_started > p:nth-of-type(2) {
+    font-size: 26px;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer_top,
+  .footer_bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer_bottom > p {
+    border-top: 1px solid rgba(82, 72, 71, 0.473);
+    padding-top: 1.5rem;
+  }
+  .footer_priv {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    order: -1;
+  }
+}
