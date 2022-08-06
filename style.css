@@ -1311,7 +1311,7 @@ nav > ul {
 }
 .IE_skills h2 {
   line-height: 3.3rem;
-  width: 55%;
+  width: 40%;
 }
 .IE_skills h2:nth-of-type(2) {
   width: 100%;
@@ -1336,6 +1336,9 @@ nav > ul {
   background-color: white;
   box-shadow: 0 8px 30px rgba(122, 122, 122, 0.16);
   transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .skills_item:hover {
   transform: translateY(-0.8rem);
@@ -1435,6 +1438,7 @@ nav > ul {
     padding-inline: 16vw;
   }
 }
+
 @media screen and (max-width: 1265px) {
   /* HERO SECTION */
   #IE_hero {
@@ -1463,6 +1467,13 @@ nav > ul {
     width: 28%;
     bottom: 12%;
   }
+  /* SKILLS */
+  .IE_skills h2 {
+    width: 50%;
+  }
+  .IE_skills > img {
+    display: none;
+  }
 
   /* WHY US */
   .whyus_cards {
@@ -1473,6 +1484,17 @@ nav > ul {
   }
   .whyus_cards:nth-last-of-type(2) {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .IE_hero_txt > img {
+    right: 17%;
+  }
+}
+@media screen and (max-width: 745px) {
+  .IE_hero_txt > img {
+    right: 0;
   }
 }
 @media screen and (max-width: 940px) {
@@ -1521,6 +1543,11 @@ nav > ul {
     text-align: center;
   }
 }
+@media screen and (max-width: 740px) {
+  .IE_hero_txt > img {
+    right: 3%;
+  }
+}
 @media screen and (max-width: 785px) {
   .whyus_cards {
     flex-basis: 48.4%;
@@ -1529,6 +1556,10 @@ nav > ul {
 }
 @media screen and (max-width: 599px) {
   /* HERO */
+  .hire_talent,
+  .talent_pool {
+    padding-inline: 1rem;
+  }
   .IE_hero_txt > h1 {
     width: 80%;
     text-align: center;
@@ -1544,6 +1575,9 @@ nav > ul {
   .IE_hero_img > img {
     width: 100%;
   }
+  .IE_hero_btns {
+    display: flex;
+  }
 
   /* IMPACTED */
   .IE_impacted_left {
@@ -1552,8 +1586,50 @@ nav > ul {
   #IE_impacted > img {
     width: 100%;
   }
+  .impacted_countries > img {
+    width: 1.5rem;
+  }
+
+  /* SKILLS */
+  .IE_skills_cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills_item {
+    flex-basis: 50%;
+  }
+  .IE_skills_cont:nth-of-type(2) > .skills_item {
+    padding-inline: 0.7rem;
+  }
+
+  /* WHY US */
+  #IE_whyus > img {
+    width: 100%;
+  }
   .whyus_cards {
-    flex-basis: 48.4%;
+    flex-basis: 100%;
     padding-inline: 1.5rem;
+  }
+
+  /* FOOTER */
+  .IE_body .footer_top > img {
+    width: 30%;
+  }
+  .IE_body .footer_top {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 520px) {
+  .IE_hero_txt > img {
+    top: 4.5rem;
+    right: 7%;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 413px) {
+  .IE_hero_txt > img {
+    width: 25%;
+    top: 7.5rem;
+    right: 19%;
   }
 }
