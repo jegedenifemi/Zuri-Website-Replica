@@ -591,14 +591,13 @@ nav > ul {
   padding: 1rem 1.5rem 0.7rem 0;
   font-size: large;
 }
-.accordion_item input {
-  display: none;
-}
-.accordion_item input ~ p {
+.accordion_item input,
+.accordion_item input ~ p  {
   display: none;
 }
 .accordion_item input:checked ~ p {
   display: block;
+  transition: 1s ease;
 }
 .accordion_item img {
   position: absolute;
