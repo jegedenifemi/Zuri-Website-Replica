@@ -7,7 +7,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid green;
 }
 body {
   color: rgb(27, 26, 32);
@@ -1185,17 +1184,17 @@ nav > ul {
 }
 /* NAV BAR */
 .IE_body nav {
-  padding: 1rem 8rem 2rem 6rem;
+  padding: 1rem 8vw 0.5rem 6vw;
 }
 .IE_body nav ul {
-  gap: 4rem;
+  gap: 3.5rem;
 }
 .IE_body nav li {
   font-size: 16px;
   padding-bottom: 1rem;
 }
 .IE_body nav li a {
-  padding: 0 0.5rem 1rem;
+  padding: 0 0rem 1rem;
   color: rgb(82, 72, 71);
 }
 .IE_body nav li a:active {
@@ -1216,7 +1215,7 @@ nav > ul {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.336);
 }
 #IE_hero {
-  padding: 6rem 8rem 0rem 6rem;
+  padding: 6rem 8vw 0 6vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1275,13 +1274,13 @@ nav > ul {
   background-position: center center;
   background-size: cover !important;
   margin-top: 4rem;
-  padding: 6rem 8rem 6rem 6rem;
+  padding: 6rem 8vw 6rem 6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .IE_impacted_left h2 {
-  width: 80%;
+  width: 85%;
 }
 .IE_impacted_left h4,
 .IE_impacted_left p {
@@ -1308,11 +1307,14 @@ nav > ul {
 /* SKILLS SECTION */
 .IE_skills,
 #IE_whyus {
-  padding: 6rem 8rem 6rem 6rem;
+  padding: 6rem 8vw 6rem 6vw;
 }
 .IE_skills h2 {
   line-height: 3.3rem;
-  width: 45%;
+  width: 55%;
+}
+.IE_skills h2:nth-of-type(2) {
+  width: 100%;
 }
 .IE_skills > img {
   position: absolute;
@@ -1329,7 +1331,7 @@ nav > ul {
   gap: 0.5rem;
 }
 .skills_item {
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.3rem;
   border-radius: 0.5rem;
   background-color: white;
   box-shadow: 0 8px 30px rgba(122, 122, 122, 0.16);
@@ -1342,6 +1344,7 @@ nav > ul {
 .skills_item > p {
   opacity: 0.9;
   font-size: 18px;
+  text-align: center;
 }
 
 /* WHY US SECTION */
@@ -1369,7 +1372,7 @@ nav > ul {
   align-items: center;
   border-bottom-right-radius: 1.1rem;
   background-color: white;
-  padding: 3rem 2rem;
+  padding: 3rem 2.5rem;
   flex-basis: 32.3%;
 }
 .whyus_cards:hover {
@@ -1397,14 +1400,16 @@ nav > ul {
   left: 0;
   top: 47%;
 }
+
+/* FOOTER */
 .IE_body footer {
   margin: 0;
   display: flex;
   flex-direction: column;
   background-color: rgb(30, 30, 30);
   color: white;
-  padding: 5rem 3rem 2rem 3rem;
-  gap: 3rem;
+  padding: 5rem 3vw 1rem 3vw;
+  gap: 2rem;
 }
 .IE_body .footer_top_social img {
   width: 2rem;
@@ -1420,3 +1425,135 @@ nav > ul {
 }
 
 /* MEDIA QUERIES FOR industryexp.html PAGE */
+@media screen and (min-width: 1650px) {
+  .IE_body nav,
+  #IE_hero,
+  #IE_impacted,
+  .IE_skills,
+  #IE_whyus,
+  .IE_body > footer {
+    padding-inline: 16vw;
+  }
+}
+@media screen and (max-width: 1265px) {
+  /* HERO SECTION */
+  #IE_hero {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .IE_hero_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .IE_hero_txt > img {
+    width: 11%;
+    right: 25%;
+  }
+  .IE_hero_txt > p {
+    width: 65%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .IE_hero_img > img {
+    width: 37.8rem;
+    margin: 0 auto;
+  }
+  #IE_hero > img {
+    width: 28%;
+    bottom: 12%;
+  }
+
+  /* WHY US */
+  .whyus_cards {
+    flex-basis: 49%;
+  }
+  .whyus_cards:empty {
+    display: none;
+  }
+  .whyus_cards:nth-last-of-type(2) {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 940px) {
+  .whyus_cards {
+    flex-basis: 48.8%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .IE_body nav {
+    padding-inline: 1rem;
+  }
+  .IE_body nav ul {
+    display: none;
+  }
+  .IE_hero_txt > img {
+    width: 15%;
+    right: 10%;
+    top: 1.5rem;
+  }
+
+  #IE_impacted {
+    flex-direction: column;
+  }
+  #IE_impacted h2,
+  .IE_skills h2,
+  #IE_whyus {
+    font-size: 30px;
+  }
+  .IE_impacted_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  #IE_impacted > img {
+    width: 65%;
+  }
+  .IE_skills_cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-block: 2.5rem;
+  }
+  .IE_skills h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 785px) {
+  .whyus_cards {
+    flex-basis: 48.4%;
+    padding-inline: 1.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  /* HERO */
+  .IE_hero_txt > h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .IE_hero_txt > img {
+    width: 20%;
+    right: 30%;
+    top: 4rem;
+  }
+  .IE_hero_txt > p {
+    width: 100%;
+  }
+  .IE_hero_img > img {
+    width: 100%;
+  }
+
+  /* IMPACTED */
+  .IE_impacted_left {
+    align-items: initial;
+  }
+  #IE_impacted > img {
+    width: 100%;
+  }
+  .whyus_cards {
+    flex-basis: 48.4%;
+    padding-inline: 1.5rem;
+  }
+}
