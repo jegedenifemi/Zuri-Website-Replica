@@ -7,6 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 1px solid green;
 }
 body {
   color: rgb(27, 26, 32);
@@ -14,14 +15,18 @@ body {
 .index_body {
   font-family: Averta, sans-serif;
 }
+.index_body a,
+.index_body p,
+.index_body li {
+  opacity: 0.9;
+}
 p,
 a,
 button,
 li {
-  /* font-weight: 300; */
+  letter-spacing: 0.02857em;
   font-size: 16px;
   line-height: 1.5rem;
-  letter-spacing: 0.00938em;
 }
 ul {
   list-style-type: none;
@@ -64,6 +69,10 @@ a {
   gap: 1.5rem;
   justify-content: center;
   margin-bottom: 15rem;
+}
+.hero_btns > a,
+.sm_links a {
+  opacity: 1;
 }
 .hero_btns > a:active > button {
   border: 2px solid black;
@@ -165,12 +174,13 @@ footer li {
   width: 1.2rem;
   height: 1.2rem;
 }
-hr {
+.index_body hr {
   border: 1px solid rgb(219, 219, 219);
-  margin-block: 5rem 2rem;
+  margin-block: 5rem 0rem;
 }
-footer > p {
+.index_body footer > p {
   text-align: center;
+  margin-top: 2rem;
   font-weight: 600;
 }
 
@@ -218,7 +228,8 @@ footer > p {
 }
 
 /* STYLING FOR industrynew.html PAGE*/
-.IN_body {
+.IN_body,
+.IE_body {
   font-family: "Graphik", sans-serif !important;
 }
 nav {
@@ -246,7 +257,7 @@ nav > ul {
   display: flex;
   align-items: center;
 }
-nav > ul > li > a > img {
+.IN_body nav > ul > li > a > img {
   width: 4.5rem;
   background-color: rgb(240, 137, 128);
   border: 10px solid rgb(231, 51, 43);
@@ -761,7 +772,7 @@ nav > ul > li > a > img {
 }
 
 /* Footer */
-footer {
+.IN_body footer {
   margin: 2rem 4rem 0;
   display: flex;
   flex-direction: column;
@@ -769,7 +780,7 @@ footer {
   padding-block: 3rem 2.5rem;
   gap: 3rem;
 }
-footer > hr {
+.IN_body footer > hr {
   display: none;
 }
 .footer_top,
@@ -802,7 +813,6 @@ footer > hr {
     margin-inline: 14vw;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .IN_hero {
     margin-block: 0 13rem;
@@ -1168,3 +1178,245 @@ footer > hr {
     order: -1;
   }
 }
+
+/* STYLES FOR industryexp.html PAGE */
+.IE_body p {
+  color: rgba(82, 72, 71, 0.8);
+}
+/* NAV BAR */
+.IE_body nav {
+  padding: 1rem 8rem 2rem 6rem;
+}
+.IE_body nav ul {
+  gap: 4rem;
+}
+.IE_body nav li {
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+.IE_body nav li a {
+  padding: 0 0.5rem 1rem;
+  color: rgb(82, 72, 71);
+}
+.IE_body nav li a:active {
+  border-bottom: 3px solid rgb(231, 51, 43);
+}
+.hire_talent,
+.talent_pool {
+  padding: 0.5rem 2.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: rgb(231, 51, 43);
+  color: white;
+  border: none;
+}
+
+/* HERO SECTION */
+#IE_hero button,
+.whyus_btns button {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.336);
+}
+#IE_hero {
+  padding: 6rem 8rem 0rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.IE_hero_img,
+.IE_hero_txt {
+  flex: 50%;
+}
+.IE_hero_txt,
+#IE_hero,
+.IE_skills {
+  position: relative;
+}
+.IE_hero_txt > img {
+  position: absolute;
+  width: 18%;
+  right: 3%;
+  top: 1.5rem;
+}
+.IE_hero_txt > h1,
+#IE_impacted h2,
+.IE_skills h2,
+#IE_whyus h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.IE_hero_txt > p {
+  font-size: 19px;
+  margin: 2.5rem 5rem 1.5rem 0;
+}
+.red_txt {
+  color: rgb(231, 51, 43);
+}
+.talent_pool {
+  padding-inline: 2.7rem;
+  margin-left: 0.5rem;
+  background-color: rgb(88, 88, 88) !important;
+}
+.IE_hero_img > img {
+  width: 70%;
+  margin-left: 37%;
+}
+#IE_hero > img {
+  width: 12%;
+  position: absolute;
+  bottom: 26%;
+  right: 0;
+  z-index: -3;
+}
+
+/* IMPACTED SECTION */
+#IE_impacted {
+  background: url(./img/industryexp/bgsection2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+  margin-top: 4rem;
+  padding: 6rem 8rem 6rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.IE_impacted_left h2 {
+  width: 80%;
+}
+.IE_impacted_left h4,
+.IE_impacted_left p {
+  font-size: 19px;
+  margin-top: 0.5rem;
+}
+.impacted_countries_cont {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.impacted_countries {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.7rem 0rem 0.7rem;
+}
+.impacted_countries > img {
+  width: 2.5rem;
+}
+#IE_impacted > img {
+  width: 35%;
+}
+
+/* SKILLS SECTION */
+.IE_skills,
+#IE_whyus {
+  padding: 6rem 8rem 6rem 6rem;
+}
+.IE_skills h2 {
+  line-height: 3.3rem;
+  width: 45%;
+}
+.IE_skills > img {
+  position: absolute;
+  z-index: -10 !important;
+  right: 0;
+  top: 26%;
+}
+.IE_skills_cont {
+  display: flex;
+  gap: 2rem;
+  margin-block: 2.5rem;
+}
+.IE_skills_cont:nth-of-type(2) {
+  gap: 0.5rem;
+}
+.skills_item {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 8px 30px rgba(122, 122, 122, 0.16);
+  transition: 0.5s ease;
+}
+.skills_item:hover {
+  transform: translateY(-0.8rem);
+  transition: 0.5s ease;
+}
+.skills_item > p {
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+/* WHY US SECTION */
+#IE_whyus {
+  position: relative;
+  background-color: rgb(255, 248, 229);
+}
+#IE_whyus h2 {
+  text-align: center;
+}
+.whyus_card_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 4rem;
+}
+
+.whyus_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 1 !important;
+  align-items: center;
+  border-bottom-right-radius: 1.1rem;
+  background-color: white;
+  padding: 3rem 2rem;
+  flex-basis: 32.3%;
+}
+.whyus_cards:hover {
+  background-color: rgb(30, 30, 30);
+}
+.whyus_cards:hover > p {
+  color: rgb(255, 255, 255) !important;
+}
+.whyus_cards:empty {
+  visibility: hidden;
+  flex-basis: 15%;
+}
+.whyus_cards > img {
+  width: 5rem;
+}
+.whyus_cards > p {
+  text-align: center !important;
+}
+.whyus_btns {
+  display: flex;
+  justify-content: center;
+}
+#IE_whyus > img {
+  position: absolute;
+  left: 0;
+  top: 47%;
+}
+.IE_body footer {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding: 5rem 3rem 2rem 3rem;
+  gap: 3rem;
+}
+.IE_body .footer_top_social img {
+  width: 2rem;
+  margin-left: 0.7rem;
+}
+
+.IE_body .footer_top_social .youtube {
+  width: 3rem;
+}
+.IE_body footer p,
+.IE_body footer a {
+  color: white;
+}
+
+/* MEDIA QUERIES FOR industryexp.html PAGE */
