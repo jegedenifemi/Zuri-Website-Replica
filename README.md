@@ -21,10 +21,31 @@ Users should be able to:
 - Flexbox & Grid
 
 ### What I learned
+CSS only Accordion for FAQs Section
 
+HTML
 ```html
- <h3>Empty for now</h3>
+     <div class="accordion_item">
+          <label>
+            <input type="checkbox" />
+            <h4>Question goes here?</h4>
+            <p>
+              Answer goes here
+            </p>
+          </label>
+        </div>
  ````
+CSS
+```css
+.accordion_item input,
+.accordion_item input ~ p  {
+  display: none;
+}
+.accordion_item input:checked ~ p {
+  display: block;
+}
+````
+
 
 ## Author
 - Twitter - [@jegedenifemi](https://twitter.com/jegedenifemi)
