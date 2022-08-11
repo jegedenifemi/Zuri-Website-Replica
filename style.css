@@ -592,7 +592,7 @@ nav > ul {
   font-size: large;
 }
 .accordion_item input,
-.accordion_item input ~ p  {
+.accordion_item input ~ p {
   display: none;
 }
 .accordion_item input:checked ~ p {
@@ -1201,6 +1201,11 @@ nav > ul {
     padding-inline: 2rem;
   }
 
+  .modal_content {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
   /* Get Started Section  */
   .get_started {
     padding-inline: 3rem;
@@ -1456,12 +1461,6 @@ nav > ul {
   position: absolute;
   left: 0;
   top: 47%;
-}
-
-/* structure */
-.modal_content {
-  padding: 1.5rem;
-  width: 90%;
 }
 
 /* FOOTER */
