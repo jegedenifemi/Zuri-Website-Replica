@@ -21,7 +21,8 @@ Users should be able to:
 - Flexbox & Grid
 
 ### What I learned
-CSS only Accordion for FAQs Section
+- CSS only Accordion for FAQs Section
+- Creating a modal using CSS and JavaScript
 
 HTML
 ```html
