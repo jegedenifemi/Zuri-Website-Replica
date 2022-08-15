@@ -1645,8 +1645,11 @@ nav > ul {
   #IE_impacted > img {
     width: 100%;
   }
+  .impacted_countries_cont {
+    gap: 0.6rem;
+  }
   .impacted_countries > img {
-    width: 1.5rem;
+    width: 2rem;
   }
 
   /* SKILLS */
